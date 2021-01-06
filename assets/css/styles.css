@@ -1,0 +1,27 @@
+.blue-header {
+  color: #67c9e0;
+  display: inline-block;
+  margin: 10px auto;
+  font-weight: bold;
+  font-family: Raleway;
+}
+
+.blue-header:after {
+  content: " ";
+  display: block;
+  width: 65%;
+  height: 1px;
+  background-color: #67c9e0;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.btn-blue {
+  background-color: rgb(103, 201, 224);
+  color: white;
+}
+
+.page-section {
+  padding: 10vh 5vw !important;
+}
+

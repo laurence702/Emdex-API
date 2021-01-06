@@ -1,0 +1,13 @@
+.header-nav, .header-nav-dropdown{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav:not(:last-child):after, .header-nav-dropdown:not(:last-child):after{
+    content: ' ';
+    display: block;
+    width: 1px;
+    height: 50%;
+    background-color: grey;
+    margin: 0 7px;
+}

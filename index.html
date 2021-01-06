@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+        <title>DrugList Design</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="assets/css/features.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"
+        />
+        <link rel="stylesheet" href="assets/css/mobile-side-menu.css" />
+        <link rel="stylesheet" href="assets/css/header-nav.css" />
+        <link rel="stylesheet" href="assets/css/section-1.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="assets/img/New-Logo-1.jpg"
+                        width="146"
+                        height="40"
+                    />
+                </a>
+                <button
+                    class="btn navbar-toggler border-0 show-mobile-navig"
+                    type="button"
+                >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item header-nav" role="presentation">
+                            <a class="nav-link" href="#whatwedo">What We Do</a>
+                        </li>
+                        <li class="nav-item header-nav" role="presentation">
+                            <a class="nav-link active" href="#features"
+                                >Features</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown header-nav-dropdown">
+                            <a
+                                class="dropdown-toggle nav-link"
+                                data-toggle="dropdown"
+                                aria-expanded="false"
+                                href="#"
+                                >Developers</a
+                            >
+                            <div class="dropdown-menu" role="menu">
+                                <a
+                                    class="dropdown-item"
+                                    role="presentation"
+                                    href="#"
+                                    >Drug List API</a
+                                >
+                                <a
+                                    class="dropdown-item"
+                                    role="presentation"
+                                    href="#"
+                                    >API Documentation</a
+                                >
+                                <a
+                                    class="dropdown-item"
+                                    role="presentation"
+                                    href="#"
+                                    >API Pricing</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item header-nav" role="presentation">
+                            <a class="nav-link" href="/search"
+                                >Drug List Search</a
+                            >
+                        </li>
+                        <li class="nav-item header-nav" role="presentation">
+                            <a class="nav-link" href="/search">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-lg-none mobile-menu-overlay close-mobile-navig"></div>
+        <div class="d-lg-none mobile-menu-box p-4">
+            <button
+                class="close text-danger fa-2x p-1 close-mobile-navig"
+                id="mobile-menu-close-button"
+            >
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="pb-5">
+                <div class="mobile-menu-navigations">
+                    <a class="nav-link mobile-menu-navig" href="#whatwedo"
+                        >What We Do</a
+                    >
+                    <a class="nav-link mobile-menu-navig" href="#features"
+                        >Features</a
+                    >
+                    <div class="dropdown nav-dropdown mobile-menu-navig">
+                        <a
+                            class="btn btn-block dropdown-toggle text-left"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                            role="button"
+                            >Developer
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a
+                                class="dropdown-item"
+                                role="presentation"
+                                href="#"
+                                >Drug List API</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                role="presentation"
+                                href="#"
+                                >API Documentation</a
+                            >
+                            <a
+                                class="dropdown-item"
+                                role="presentation"
+                                href="#"
+                                >API Pricing</a
+                            >
+                        </div>
+                    </div>
+                    <a class="nav-link mobile-menu-navig" href="/search"
+                        >Drug List Search</a
+                    >
+                    <a class="nav-link mobile-menu-navig" href="/contact"
+                        >Contact Us</a
+                    >
+                </div>
+            </div>
+            <div class="d-flex justify-content-around mobile-menu-footer">
+                <div class="small">
+                    <i class="fa fa-envelope mr-1"></i>
+                    <a href="mailto:info@druglist.ng">info@druglist.ng</a>
+                </div>
+                <div>
+                    <a class="mobile-nav-social-link" href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="mobile-nav-social-link" href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="mobile-nav-social-link" href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section
+                class="d-flex justify-content-center align-items-center page-section"
+                id="rev_slider_1_1"
+                style="
+                    background-image: url('assets/img/Homepage_Top_Image_Get_The_Knowledge_large.jpg');
+                    background-size: cover;
+                    background-position: center center;
+                "
+            >
+                <div id="knowledge-box">
+                    <div class="overflow-hidden mb-2">
+                        <h3
+                            data-aos="slide-down"
+                            data-aos-delay="1000"
+                            data-aos-duration="1200"
+                            data-aos-once="true"
+                            class="blue-header m-0"
+                        >
+                            Get The Knowledge
+                        </h3>
+                    </div>
+                    <div
+                        data-aos="zoom-out-right"
+                        data-aos-delay="2000"
+                        data-aos-duration="1400"
+                        data-aos-once="true"
+                    >
+                        <span class="d-block"
+                            >Power your medical applications with</span
+                        >
+                        <span class="d-block">comprehensive drug know-how</span>
+                    </div>
+                    <div class="text-right overflow-hidden">
+                        <a
+                            class="btn btn-sm btn-blue"
+                            role="button"
+                            data-aos="slide-left"
+                            data-aos-delay="2600"
+                            data-aos-once="true"
+                            href="/search"
+                            >Search Drug List</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <section
+                class="d-flex justify-content-center align-items-center page-section p-4"
+                id="whatwedo"
+            >
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="blue-header">What we do</h3>
+                    </div>
+
+                    <p class="text-center">
+                        At DrugList.ng we maintain the most comprehensive and
+                        up-to-date knowledge base of approved drugs available in
+                        Nigeria.
+                        <br />
+                    </p>
+                    <p class="text-center">
+                        As a team of &nbsp;pharmaceutical professionals and I.T.
+                        experts we work together to combine detailed drug data
+                        with comprehensive drug product information, setting the
+                        standard for access to reliable drug information in
+                        Nigeria.
+                        <br />
+                    </p>
+                </div>
+            </section>
+            <section
+                class="text-white bg-secondary page-section py-5"
+                id="features"
+            >
+                <div class="container">
+                    <div class="text-center">
+                        <h1 class="blue-header">Features</h1>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-4 feature-column">
+                            <div class="row no-gutters flex-nowrap">
+                                <div class="col-auto">
+                                    <img
+                                        class="img-fluid feature-img"
+                                        data-aos="flip-right"
+                                        data-aos-duration="800"
+                                        src="assets/img/loupe-1.png"
+                                    />
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <h6>Powerful Search</h6>
+                                        <p class="text-justify text-light">
+                                            Full or partial name search on
+                                            brand, product, generic, ingredient
+                                            or synonym name for fast and
+                                            comprehensive results.<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 feature-column">
+                            <div class="row no-gutters flex-nowrap">
+                                <div class="col-auto">
+                                    <i
+                                        class="fa fa-thumbs-o-up feature-icon"
+                                        data-aos="flip-right"
+                                        data-aos-duration="800"
+                                    ></i>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <h6>Brands</h6>
+                                        <p class="text-justify text-light">
+                                            Search on over 5,000 brands and drug
+                                            manufacturers including their
+                                            associated products and product
+                                            details.
+                                            <br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 feature-column">
+                            <div class="row no-gutters flex-nowrap">
+                                <div class="col-auto">
+                                    <i
+                                        class="fa fa-plus-square feature-icon"
+                                        data-aos="flip-right"
+                                        data-aos-duration="800"
+                                    ></i>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <h6>Drug Ingredients</h6>
+                                        <p class="text-justify text-light">
+                                            Over 15,000 drug summaries covering
+                                            every drug approved by NAFDAC with
+                                            associated RxNorm identifiers.<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-4 feature-column">
+                            <div class="row no-gutters flex-nowrap">
+                                <div class="col-auto">
+                                    <i
+                                        class="fa fa-briefcase feature-icon"
+                                        data-aos="flip-right"
+                                        data-aos-duration="800"
+                                    ></i>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <h6>Products</h6>
+                                        <p class="text-justify text-light">
+                                            Details on over 8,000 drug products
+                                            available covering every NAFDAC
+                                            approved drug in Nigeria. Includes
+                                            brand name, generics, manufacturer,
+                                            dosage, dose form, route of
+                                            administration, indications and
+                                            pharmaceutical notes.<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row no-gutters">
+                                <div class="col-12 feature-column mb-4">
+                                    <div class="row no-gutters flex-nowrap">
+                                        <div class="col-auto">
+                                            <i
+                                                class="fa fa-user-md feature-icon"
+                                                data-aos="flip-right"
+                                                data-aos-duration="800"
+                                            ></i>
+                                        </div>
+                                        <div class="col">
+                                            <div>
+                                                <h6>Drug Indications</h6>
+                                                <p
+                                                    class="text-justify text-light"
+                                                >
+                                                    Powerful two way
+                                                    drug-indication-drug search.
+                                                    <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 feature-column">
+                                    <div class="row no-gutters flex-nowrap">
+                                        <div class="col-auto">
+                                            <i
+                                                class="fa fa-check feature-icon"
+                                                data-aos="flip-right"
+                                                data-aos-duration="800"
+                                            ></i>
+                                        </div>
+                                        <div class="col">
+                                            <div>
+                                                <h6>Drug Interactions</h6>
+                                                <p
+                                                    class="text-justify text-light"
+                                                >
+                                                    Comprehensive Drug
+                                                    Interaction checker
+                                                    containing severity levels,
+                                                    effects and recommendations
+                                                    for management.<br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 feature-column">
+                            <div class="row no-gutters flex-nowrap">
+                                <div class="col-auto">
+                                    <i
+                                        class="fa fa-th feature-icon"
+                                        data-aos="flip-right"
+                                        data-aos-duration="800"
+                                    ></i>
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <h6>
+                                            E-Prescription Auto-complete search
+                                            <br />
+                                        </h6>
+                                        <p class="text-justify text-light">
+                                            Summaries of Brand names,
+                                            Ingredients and dosages to drive
+                                            your E-Prescription auto-complete
+                                            menus.
+                                            <br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="d-flex align-items-center page-section"
+                id="mobileapp"
+            >
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-12 col-md-6 py-5">
+                            <h2 class="blue-header">DrugList Mobile App</h2>
+                            <p>
+                                The complete DrugList data and all its
+                                &nbsp;features is coming soon as a free mobile
+                                app on Android and iOS platforms. Register below
+                                to receive early release access details.
+                                <br />
+                            </p>
+                            <a
+                                class="btn btn-outline-info btn-lg"
+                                role="button"
+                                href="/contact"
+                                >Register Now</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-6 py-5">
+                            <img
+                                class="img-fluid"
+                                src="assets/img/dl_mobile_m_46010516.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="text-white d-flex align-items-end page-section"
+                id="database"
+                style="
+                    background-image: url('assets/img/API_Overview_Top_Image_medium.jpg');
+                    background-position: center center;
+                    background-size: cover;
+                "
+            >
+                <div class="container pb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2 class="blue-header text-white">
+                                <i class="fa fa-code"></i>
+                                <span>Developers</span>
+                            </h2>
+                            <p>
+                                Our simple but powerful Application Programming
+                                Interface (API) makes it easy to integrate
+                                up-to-date pharmaceutical knowledge into your
+                                medical applications, mobile apps and
+                                organisation platforms.<br />
+                            </p>
+                            <a
+                                class="btn btn-outline-info btn-lg"
+                                role="button"
+                                href="/api-overview"
+                                >API Details</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="d-flex align-items-center page-section"
+                id="mobileapp"
+            >
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 py-5">
+                            <h2 class="blue-header">On-Premises Database</h2>
+                            <p>
+                                The complete DrugList drug database is also
+                                available to power your software applications
+                                and product development pipelines. Get in touch
+                                with us now to discuss the various data
+                                licensing options available.<br />
+                            </p>
+                            <a
+                                class="btn btn-outline-info btn-lg"
+                                role="button"
+                                href="/contact"
+                                >Register Now</a
+                            >
+                        </div>
+                        <div class="col-12 col-md-6 py-5">
+                            <img
+                                class="img-fluid"
+                                src="assets/img/Circle-1.png"
+                                width="100%"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="text-center">
+                <div>
+                    <span>
+                        <a href="/privacy">Privacy Policy</a>
+                    </span>
+                    <span class="mx-1">+</span>
+                    <span>
+                        <a href="/terms">Terms</a>
+                    </span>
+                </div>
+                <div>
+                    <span class="mx-1">© DrugList.ng 2018</span>
+                </div>
+            </footer>
+        </main>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="assets/js/bs-animation.js"></script>
+        <script src="assets/js/general.js"></script>
+    </body>
+</html>

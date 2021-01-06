@@ -1,0 +1,9 @@
+footer {
+  background: #67c9e0 none repeat center top;
+  padding: 60px 10px 120px;
+}
+
+footer * {
+  color: white;
+}
+
