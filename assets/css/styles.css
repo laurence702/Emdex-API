@@ -1,5 +1,5 @@
 .blue-header {
-  color: #67c9e0;
+  color: #756af8;
   display: inline-block;
   margin: 10px auto;
   font-weight: bold;
@@ -11,7 +11,7 @@
   display: block;
   width: 65%;
   height: 1px;
-  background-color: #67c9e0;
+  background-color: #756af8;
   margin: auto;
   margin-top: 7px;
 }
@@ -23,5 +23,19 @@
 
 .page-section {
   padding: 10vh 5vw !important;
+}
+
+.gradient-buttons .btn {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.15) 51%, rgba(0, 0, 0, 0.05));
+  background-repeat: repeat-x;
+}
+.purp{
+  color:#756af8;
+}
+.purp-header a:hover{
+  color:#756af8;
+}
+.page-section-bg{
+  color:#9ba4ac;
 }
 
