@@ -1,5 +1,7 @@
 #rev_slider_1_1 {
   padding: 25vh 5vw !important;
+  background-color: rgb(38 4 4 / 30%);
+  background-blend-mode: overlay;
 }
 
 
