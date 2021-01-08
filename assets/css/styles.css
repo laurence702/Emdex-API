@@ -39,10 +39,14 @@
   color:#9ba4ac;
 }
 
-.rotateimg180 {
-  -webkit-transform:rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+.header-section {
+  height: 600px;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+}
+
+.header-section > img {
+ object-fit: cover;
+ opacity: 0.4;
 }
