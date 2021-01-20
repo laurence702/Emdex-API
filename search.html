@@ -5,34 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drug Finder</title>
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
-    <link href="assets/css/dataList.css" rel="stylesheet">
-    <script src="assets/js/dataList.js"></script>
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background: #29313a;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .search-box {
+            width: 450px;
+            height: 100px;
+            position: relative;
+        }
+
+        .input {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            box-sizing: border-box;
+            width: 0px;
+            height: 63px;
+            padding: 0 20px;
+            outline: none;
+            font-size: 18px;
+            border-radius: 50px;
+            color: #29313a;
+            border: 3px solid #756af8;
+            transition: all 0.8s ease;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #756af8;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #756af8;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #756af8;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: #756af8;
+        }
+
+        .btn {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: #756af8;
+            border-radius: 50%;
+            right: 45px;
+            top: 10px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+            color: #fff;
+            transition: all 0.8s ease;
+        }
+
+        .input.active {
+            width: 350px;
+            right: 100px;
+        }
+
+        .btn.animate {
+            transform: rotate(-360deg);
+            right: 100px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <input placeholder='Search drug...' class='js-search' type="text">
-        <i class="fa fa-search"></i>
-    </div>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <select id="select" class="form-control" placeholder="Please, enter a choice">
-                <option value="a">Option A</option>
-                <option value="b">Option B</option>
-                <option value="c">Option C</option>
-            </select>
+    <div class="wrapper">
+        <div class="search-box">
+            <input type="text" placeholder="Search" id="find_drug" class="input">
+            <div class="btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
-    
-    <script>
-        $('#select').dataList();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.5/vue.cjs.js"
-        integrity="sha512-tbfpVZegVjOUS9H3X526XZJxi/dPnhiGRM8Z83AY8kbFBrZLuug/mU57PJJsdXn38dlXjrUxtaEOl11Y1uoaRQ=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
+    <script>
+        $(".btn").click(function () {
+            $(".input").toggleClass("active").focus;
+            $(this).toggleClass("animate");
+            $(".input").val("");
+        });
+        $("#find_drug").change(function(){
+            alert('typing');
+        })
+    </script>
 </body>
 
 </html>
