@@ -1,13 +1,13 @@
 #rev_slider_1_1 {
   padding: 25vh 5vw !important;
-  background-color: rgb(38 4 4 / 30%);
+  background-color: rgb(7 12 238 / 30%);
   background-blend-mode: overlay;
 }
 
 
 #knowledge-box {
   padding: 15px 6vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(143, 125, 125, 0.5);
   border-radius: 0 52px;
   text-align: center;
   color: white;

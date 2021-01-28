@@ -50,7 +50,7 @@ body.show-mobile-menu .mobile-menu-box {
 .mobile-menu-navigations .nav-link, .mobile-menu-navigations .nav-dropdown {
     padding: 15.5px 30px 15.5px 0;
     text-transform: uppercase;
-    color: #756af8 !important;
+    color: #0851AA !important;
 }
 
 .mobile-menu-navigations .mobile-menu-navig:not(:last-child){
@@ -90,6 +90,6 @@ body.show-mobile-menu .mobile-menu-box {
 }
 
 .mobile-nav-social-link:hover {
-    background-color: rgb(0, 123, 255);
+    background-color: #0851AA;
     color: white;
 }
