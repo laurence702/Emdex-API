@@ -1,5 +1,5 @@
 .blue-header {
-  color: #756af8;
+  color: #2F75B5;
   display: inline-block;
   margin: 10px auto;
   font-weight: bold;
@@ -11,7 +11,7 @@
   display: block;
   width: 65%;
   height: 1px;
-  background-color: #756af8;
+  background-color: #2F75B5;
   margin: auto;
   margin-top: 7px;
 }
